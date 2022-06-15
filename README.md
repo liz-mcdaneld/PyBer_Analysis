@@ -5,11 +5,17 @@ The purpose of this analysis is to review and analyze the PyBer ride-sharing com
 
 ## Analysis Results
  To start the analysis the two dataset must be merged using the groupby() functions. I applied the groupby() function to get the: total rides, total drivers, total amount of fares, and the average fare per ride for each city type. 
+ 
+ ![PyBer_summary_df](https://user-images.githubusercontent.com/103263248/173900310-0235ce8b-741f-44e3-a037-ca1bcd9ce931.png)
+ 
 Looking at this data frame we can see that:
 •	Rural cities have the least number of drivers. The total fares are the least amount eared of the city types. The Rural cities have the highest average fare per ride and average fare per driver.
 •	Suburban cities have a driver to rider ratio of 1:1.3. This places the Suburban average fare per ride, and average fare per drive in between the low rural cities and high Urban cities.
 •	Urban cities have more total drivers than total rides. This also impacted the average fare per ride and fare per driver. While there are more Urban drivers, they have the lowest average fare per ride and drivers earned considerably less than the other city types.
 At the request of the CEO, the data for the city types was turned into a pivot table to show the total weekly sum of the fares for each type of city. The dates were selected using the .loc() function to only show the data from January 1, 2019 through April 29, 2019. This data was then turned into a multiple-line graph to view the data.
+
+![PyBer_fare_summary](https://user-images.githubusercontent.com/103263248/173900344-3712b4dc-2ec8-4c41-8008-0263840f60c7.png)
+
 Looking at this multiple-line graph we can see that:
 •	All three city types have a peak in the sum of fares in the end of February, then all three have the peak decline by the beginning of March.
 •	Urban cities have a few more drastic peaks and declines in the sum of fares throughout March.
